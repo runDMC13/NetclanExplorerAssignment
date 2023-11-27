@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item_1"
+
+        android:title="@string/available_string"
+        android:visibility="visible"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/menu_item_2"
+        android:title="@string/away_string"
+        android:visibility="visible"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/menu_item_3"
+        android:title="@string/busy_string"
+        android:visibility="visible"
+        android:visible="true"
+        />
+
+    <item
+        android:id="@+id/menu_item_4"
+        android:title="@string/sos_string"
+        android:visibility="visible"
+        android:visible="true" />
+</menu>

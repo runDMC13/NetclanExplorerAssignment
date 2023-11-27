@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RefineActivity">
+
+    <TextView
+        android:id="@+id/textView_availability_refine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Select Your Availability"
+        android:textColor="#123"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <Button
+        android:id="@+id/availability_button_refine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/curved_views"
+        android:gravity="fill_vertical"
+        android:padding="15dp"
+        android:text="@string/available_string"
+        android:textColor="#123"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView_availability_refine"
+        app:layout_constraintTop_toBottomOf="@+id/textView_availability_refine" />
+
+    <TextView
+        android:id="@+id/textView_status_refine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/status_string"
+        android:textColor="#123"
+
+        app:layout_constraintStart_toStartOf="@+id/textView_availability_refine"
+        app:layout_constraintTop_toBottomOf="@+id/availability_button_refine" />
+
+    <EditText
+        android:id="@+id/enterStatus_editText_refine"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/curved_views"
+        android:ems="10"
+        android:gravity="start"
+        android:inputType="text"
+        android:padding="15dp"
+        android:text="@string/add_status_string"
+        android:textSize="10sp"
+
+        app:layout_constraintEnd_toEndOf="@+id/availability_button_refine"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/availability_button_refine"
+        app:layout_constraintTop_toBottomOf="@+id/textView_status_refine" />
+
+    <TextView
+        android:id="@+id/range_refine_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/local_distance_string"
+        android:textColor="#123"
+
+        app:layout_constraintStart_toStartOf="@+id/textView_status_refine"
+        app:layout_constraintTop_toBottomOf="@+id/enterStatus_editText_refine" />
+
+    <TextView
+        android:id="@+id/purpose_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/purpose_string"
+        android:textColor="#123"
+
+        app:layout_constraintEnd_toEndOf="@+id/range_refine_textview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/range_refine_textview"
+        app:layout_constraintTop_toBottomOf="@+id/range_refine_textview" />
+
+    <Button
+        android:id="@+id/coffee_button"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/curved_button"
+        android:text="@string/coffee_button_text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/business_button"
+        app:layout_constraintStart_toStartOf="@+id/availability_button_refine"
+        app:layout_constraintTop_toBottomOf="@+id/purpose_textview" />
+
+    <Button
+        android:id="@+id/business_button"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/curved_button"
+        android:text="@string/business_button_text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/coffee_button"
+        app:layout_constraintEnd_toStartOf="@+id/hobbies_button"
+        app:layout_constraintStart_toEndOf="@+id/coffee_button"
+        app:layout_constraintTop_toTopOf="@+id/coffee_button" />
+
+    <Button
+        android:id="@+id/hobbies_button"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/curved_button"
+        android:text="@string/hobbies_button_text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/business_button"
+        app:layout_constraintEnd_toStartOf="@+id/friendship_button"
+        app:layout_constraintStart_toEndOf="@+id/business_button"
+        app:layout_constraintTop_toTopOf="@+id/business_button"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/friendship_button"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/curved_button"
+        android:text="@string/friendship_button_text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/hobbies_button"
+        app:layout_constraintEnd_toStartOf="@+id/movies_button"
+        app:layout_constraintStart_toEndOf="@+id/hobbies_button"
+        app:layout_constraintTop_toTopOf="@+id/hobbies_button"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/movies_button"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="39dp"
+        android:background="@drawable/curved_button"
+        android:text="@string/movies_button_text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/friendship_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/friendship_button"
+        app:layout_constraintTop_toTopOf="@+id/friendship_button" />
+
+    <Button
+        android:id="@+id/dinning_button"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/curved_button"
+        android:text="@string/dinning_button_text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/dating_button"
+        app:layout_constraintStart_toStartOf="@+id/coffee_button"
+        app:layout_constraintTop_toBottomOf="@+id/coffee_button" />
+
+    <Button
+        android:id="@+id/dating_button"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/curved_button"
+        android:text="@string/dating_button_text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/matrimony_button"
+        app:layout_constraintStart_toEndOf="@+id/dinning_button"
+        app:layout_constraintTop_toTopOf="@+id/dinning_button" />
+
+    <Button
+        android:id="@+id/matrimony_button"
+        android:layout_width="80dp"
+
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/curved_button"
+        android:text="@string/matrimony_button_text"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/dating_button"
+        app:layout_constraintTop_toTopOf="@+id/dating_button" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/curved_save_button"
+        android:text="@string/save_button_text"
+        android:textColor="#fff"
+
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/movies_button"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/coffee_button"
+        app:layout_constraintTop_toBottomOf="@+id/matrimony_button" />
+
+    <SeekBar
+        android:id="@+id/seekBar_refine_distance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/purpose_textview"
+        app:layout_constraintEnd_toEndOf="@+id/enterStatus_editText_refine"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/enterStatus_editText_refine"
+        app:layout_constraintTop_toBottomOf="@+id/range_refine_textview"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

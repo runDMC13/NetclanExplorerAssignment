@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Netclan Explorer</string>
+    <string name="personalExplore">Personal</string>
+    <string name="merchantExplore">Merchant</string>
+    <string name="businessExplore">Business</string>
+    <string name="available_string">Availability | Hey Let Us Connect</string>
+    <string name="away_string">Away | Stay Discrete And Watch</string>
+    <string name="busy_string">Busy | Do Not Disturb | Will Catch Up Later</string>
+    <string name="sos_string">SOS | Emergency1 Need Assistance! Help</string>
+    <string name="status_string">Add Your Status</string>
+    <string name="local_distance_string">Select Hyper Local Distance\n</string>
+    <string name="add_status_string">Hi community! I am open to new connections \"😊\"</string>
+    <string name="purpose_string">Select Purpose</string>
+    <string name="coffee_string">Coffee\n</string>
+    <string name="coffee_button_text">Coffee</string>
+    <string name="business_button_text">Business</string>
+    <string name="hobbies_button_text">HObbies</string>
+    <string name="friendship_button">Friendship</string>
+    <string name="friendship_button_text">Friendship</string>
+    <string name="moives" />
+    <string name="movies_button_text">Movies</string>
+    <string name="dinning_button_text">Dinning</string>
+    <string name="dating_button_text">Dating</string>
+    <string name="matrimony_button_text">Matrimony</string>
+    <string name="save_button_text"><![CDATA[Save & Explore]]></string>
+    <string name="merchant_text_sorry">Sorry, we could not find any user near you.</string>
+    <string name="intro_personal">HI community! I am open to new connections \"😊\"</string>
+</resources>
