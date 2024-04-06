@@ -14,6 +14,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintSet.Layout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.*
@@ -211,11 +212,12 @@ class PersonalFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.personal_layout, container, false)
 
-
     }
 
 
+
 }
+
 
 class BusinessFragment : Fragment() {
     override fun onCreateView(
